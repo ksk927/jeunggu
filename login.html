@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <button onclick="location.href='signup.html'">회원가입</button>
+        </div>
+        <nav>
+            <ul>
+                <li class="logo">
+                    <img src="logo.png" alt="로고" onclick="location.href='index.html'">
+                </li>
+                <li><a href="korBaseball.html">한국야구</a></li>
+                <li><a href="overseasBaseball.html">해외야구</a></li>
+                <li><a href="korFootball.html">한국축구</a></li>
+                <li><a href="overseasFootball.html">해외축구</a></li>
+                <li><a href="korBasketball.html">한국농구</a></li>
+                <li><a href="overseasBasketball.html">외국농구</a></li>
+                <li><a href="profile.html">회원정보</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>로그인</h2>
+        <form id="loginForm">
+            <label for="email">이메일:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">비밀번호:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">로그인</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 모든 권리 보유.</p>
+    </footer>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // 기본 폼 제출 방지
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // 여기에 로그인 처리 로직 추가 (예: 서버로 요청 보내기)
+            console.log('이메일:', email);
+            console.log('비밀번호:', password);
+
+            // 로그인 성공 시 홈 페이지로 이동 (예시)
+            location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>

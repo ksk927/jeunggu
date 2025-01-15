@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국농구</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <button onclick="location.href='login.html'">로그인</button>
+            <button onclick="location.href='signup.html'">회원가입</button>
+        </div>
+        <nav>
+            <ul>
+                <li class="logo">
+                    <img src="logo.png" alt="로고" onclick="location.href='index.html'">
+                </li>
+                <li><a href="korBaseball.html">한국야구</a></li>
+                <li><a href="overseasBaseball.html">해외야구</a></li>
+                <li><a href="korFootball.html">한국축구</a></li>
+                <li><a href="overseasFootball.html">해외축구</a></li>
+                <li><a href="korBasketball.html">한국농구</a></li>
+                <li><a href="overseasBasketball.html">외국농구</a></li>
+                <li><a href="profile.html">회원정보</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>한국농구 게시판</h2>
+        <div class="post-container">
+            <table id="postListTable">
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>글쓴이</th>
+                        <th>날짜</th>
+                        <th>조회수</th>
+                    </tr>
+                </thead>
+                <tbody id="postList">
+                    <!-- 게시글 목록이 여기에 표시됩니다 -->
+                </tbody>
+            </table>
+            <div class="post-image">
+                <img src="side-image.jpg" alt="이미지" id="sideImage">
+            </div>
+        </div>
+        <div id="pagination"></div>
+        <div>
+            <input type="text" id="searchInput" placeholder="검색어 입력">
+            <select id="searchType">
+                <option value="titleAndContent">제목+본문</option>
+                <option value="title">제목</option>
+                <option value="userId">아이디</option>
+                <option value="nickname">닉네임</option>
+                <option value="views">조회수</option>
+            </select>
+            <button onclick="searchPosts()">검색</button>
+        </div>
+        <button onclick="location.href='writePost.html'">글쓰기</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 모든 권리 보유.</p>
+    </footer>
+</body>
+</html>

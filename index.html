@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커뮤니티 사이트</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <button onclick="location.href='login.html'">로그인</button>
+            <button onclick="location.href='signup.html'">회원가입</button>
+        </div>
+        <nav>
+            <ul>
+                <li class="logo">
+                    <img src="logo.png" alt="로고" onclick="location.href='index.html'">
+                </li>
+                <li><a href="korBaseball.html">한국야구</a></li>
+                <li><a href="overseasBaseball.html">해외야구</a></li>
+                <li><a href="korFootball.html">한국축구</a></li>
+                <li><a href="overseasFootball.html">해외축구</a></li>
+                <li><a href="korBasketball.html">한국농구</a></li>
+                <li><a href="overseasBasketball.html">외국농구</a></li>
+                <li><a href="profile.html">회원정보</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <img src="home-image.jpg" alt="메인 이미지" class="main-image">
+    </section>
+
+    <section id="best">
+        <h2>실시간 베스트 글</h2>
+        <div class="best-container">
+            <div class="best-posts">
+                <div class="category">
+                    <div class="category-header">
+                        <h3><img src="korBaseball.png" alt="한국야구">한국야구</h3>
+                    </div>
+                    <div class="posts" id="korBaseballBest">
+                        <!-- 실시간 베스트 글 목록이 여기에 표시됩니다 -->
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="category-header">
+                        <h3><img src="overseasBaseball.png" alt="해외야구">해외야구</h3>
+                    </div>
+                    <div class="posts" id="overseasBaseballBest">
+                        <!-- 실시간 베스트 글 목록이 여기에 표시됩니다 -->
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="category-header">
+                        <h3><img src="korFootball.png" alt="한국축구">한국축구</h3>
+                    </div>
+                    <div class="posts" id="korFootballBest">
+                        <!-- 실시간 베스트 글 목록이 여기에 표시됩니다 -->
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="category-header">
+                        <h3><img src="overseasFootball.png" alt="해외축구">해외축구</h3>
+                    </div>
+                    <div class="posts" id="overseasFootballBest">
+                        <!-- 실시간 베스트 글 목록이 여기에 표시됩니다 -->
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="category-header">
+                        <h3><img src="korBasketball.png" alt="한국농구">한국농구</h3>
+                    </div>
+                    <div class="posts" id="korBasketballBest">
+                        <!-- 실시간 베스트 글 목록이 여기에 표시됩니다 -->
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="category-header">
+                        <h3><img src="overseasBasketball.png" alt="외국농구">외국농구</h3>
+                    </div>
+                    <div class="posts" id="overseasBasketballBest">
+                        <!-- 실시간 베스트 글 목록이 여기에 표시됩니다 -->
+                    </div>
+                </div>
+            </div>
+            <div class="best-image">
+                <img src="side-image.jpg" alt="이미지">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 모든 권리 보유.</p>
+    </footer>
+</body>
+</html>
